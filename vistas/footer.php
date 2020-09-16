@@ -33,6 +33,6 @@
 <script src="../plugins/fullcalendar-interaction/main.min.js"></script>
 <script src="../plugins/fullcalendar-bootstrap/main.min.js"></script>
 <!-- Page specific script -->
-<script src="../js/main.js"></script>
+<script src="../js/main-calendar.js"></script> 
 </body>
 </html>
