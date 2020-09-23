@@ -30,7 +30,7 @@
 
       <form action="recover-password.php" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="text" class="form-control" id="email" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Request new password</button>
+            <button type="submit" id="recuperarPass" class="btn btn-primary btn-block">Recuperar Contraseña</button>
           </div>
           <!-- /.col -->
         </div>
@@ -63,6 +63,7 @@
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
+<script src="../js/forgot-password.js"></script>
 
 </body>
 </html>
