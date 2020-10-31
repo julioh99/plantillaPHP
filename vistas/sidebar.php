@@ -29,6 +29,14 @@
                 <p>INICIO<span class="right badge badge-danger">New</span></p>
             </a>
         </li>
+        <!--Item Tienda -->
+        <li class="nav-header">Tienda</li>
+            <li class="nav-item">
+                <a href="tienda.php" class="nav-link">
+                    <i class="nav-icon fas fa-calendar-alt"></i>
+                    <p>Tienda<span class="badge badge-danger right">9+</span></p>
+                </a>
+            </li>
         <!--Item Calendario -->
         <li class="nav-header">Calendario</li>
             <li class="nav-item">
