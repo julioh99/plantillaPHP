@@ -1,5 +1,13 @@
+
 <?php
-include './Conexion.config.php';
+$pdo = new PDO('mysql:host=localhost;dbname=DBTienda','root',''); 
+if ($pdo) {
+    //echo  '<script>alert("Conexion Exitosa")</script>';  
+}else{
+    echo  '<script>alert("Conexion Erronea")</script>';
+}
+/*
+//include './Conexion.config.php';
 class Conexion{
 
    public $bolState = false;
@@ -8,7 +16,7 @@ class Conexion{
 
    public  function __construct(){
       try{
-         $bd_dns = 'mysql:host=localhost; dbname=dbplantilla; charset=utf8';
+         $bd_dns = 'mysql:host=localhost; dbname=DBTienda; charset=utf8';
          $bd_user = 'root';
          $bd_password = null;
          $bd_options = array(PDO::ATTR_PERSISTENT => true);
@@ -30,13 +38,6 @@ class Conexion{
    public function getdbs(){
       return $this->$bds;
    }
-   public function __destruct() {
-
-      foreach ($this as &$value) {
-          $value = null;
-      }
-      echo'Método destructor invocado';
-  }
 
 }
-$c = new conexion();
+$c = new conexion();*/
