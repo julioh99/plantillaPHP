@@ -30,7 +30,7 @@
 
       <form action="index.php" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email"required>
+          <input type="email" name="TxtUsuario" class="form-control" placeholder="Email"required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" required>
+          <input type="password" name="TxtPassword" class="form-control" placeholder="Password" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
