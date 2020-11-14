@@ -31,7 +31,21 @@ include("../funciones/registro.funciones.php");
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
 
-      <form action="registro.php" id='frmRegistro' method="POST">
+      <form action="../funciones/registro.funciones.php" id='frmRegistro' method="POST">
+      <div class="input-group mb-3">
+          <select class="form-control" name="CbxTipoId">
+            <option value="CC">Cédula de Ciudadanía</option>
+            <option value="TID">Tarjeta de Identificación</option>
+            <option value="PASS">Pasaporte</option>
+            <option value="CE">Cédula extranjera</option>
+            <option value="NIT">NIT</option>
+          </select>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="TxtId" placeholder="Documento">
           <div class="input-group-append">
