@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -23,8 +23,6 @@
   <link rel="stylesheet" href="../plugins/fullcalendar-daygrid/main.min.css">
   <link rel="stylesheet" href="../plugins/fullcalendar-timegrid/main.min.css">
   <link rel="stylesheet" href="../plugins/fullcalendar-bootstrap/main.min.css">
-  
-  
 </head>
 <!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -34,16 +32,13 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="index.php" class="nav-link"><i class="nav-icon fas fa-home"></i> Home</a>
       </li>
       <li class="nav-item active">
-                    <a class="nav-link" href="mostrarCarrito.php">Carrito(<?php 
-                    echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']); ?>)
-                    </a>
-                </li>
+        <a class="nav-link" href="../Tienda/mostrarCarrito.php">                   
+        <i class="nav-icon fas fa-shopping-cart"></i> Carrito                       
+        </a>
+      </li>
     </ul>
   </nav>
   <!-- /.navbar -->

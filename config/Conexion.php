@@ -1,6 +1,6 @@
 
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=DBTienda','root',''); 
+$pdo = new PDO('mysql:host=localhost;dbname=dbturnos','root',''); 
 if ($pdo) {
     //echo  '<script>alert("Conexion Exitosa")</script>';  
 }else{
