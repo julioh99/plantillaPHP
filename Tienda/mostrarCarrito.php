@@ -38,7 +38,7 @@ include('templates/cabecera.php');
             </td>
             <td width='5%'>
                 <form action="" method="POST">
-                <input type="text" 
+                <input type="hidden" 
                 name="Codigo" 
                 id="Codigo" 
                 value="<?php echo  openssl_decrypt($producto['Codigo'], COD, KEY) ?>">
