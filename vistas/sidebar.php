@@ -47,7 +47,7 @@
             </li>
         <li class="nav-header">Usuarios</li>
             <li class="nav-item">
-                <a href="register.php" class="nav-link">
+                <a href="registro.php" class="nav-link">
                     <i class="fas fa-plus-circle nav-icon"></i>
                     <p>Crear</p>
                 </a>
