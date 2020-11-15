@@ -26,10 +26,10 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
+      <p class="login-box-msg">Olvidate tu contraseña? Ingresa tu correo para enviarte el enlace de recuperación</p>
 
       <form action="recover-password.php" method="post">
-        <div class="input-group mb-3">
+        <div class="input-group mb-1">
           <input type="text" class="form-control" id="email" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
@@ -37,6 +37,16 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-10">
+            <div class="icheck-primary">
+              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <label for="agreeTerms">
+              Autorizo el envio de  <a href="#">Correos</a>
+              </label>
+            </div>
+          </div>
+          </div>
         <div class="row">
           <div class="col-12">
             <button type="submit" id="recuperarPass" class="btn btn-primary btn-block">Recuperar Contraseña</button>
