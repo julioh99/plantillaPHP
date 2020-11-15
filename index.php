@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<?php 
-header('Location: pages/login.php');
-echo 'Obeimar Estuvo Aqui';
-=======
 /*Reemplazar*\
 <?php 
 header('Location: pages/login.php');
@@ -57,4 +52,3 @@ if(isset($_POST['TxtUsuario']) && isset($_POST['TxtPassword'])){
     }
 }
 
->>>>>>> 48733822eed6e71d860b0c43e71b25260a5afd90
