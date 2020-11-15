@@ -6,7 +6,6 @@
   <title>Julio | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -27,10 +26,9 @@
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
-
       <form action="index.php" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email"required>
+          <input type="email" name="TxtUsuario" class="form-control" placeholder="Email"required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -38,7 +36,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" required>
+          <input type="password" name="TxtPassword" class="form-control" placeholder="Password" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -52,7 +50,6 @@
           <!-- /.col -->
         </div>
       </form>
-
       <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
         <a href="#" class="btn btn-block btn-primary">
@@ -63,7 +60,6 @@
         </a>
       </div>
       <!-- /.social-auth-links -->
-
       <p class="mb-1">
         <a href="forgot-password.php">OLvidé mi Contraseña</a>
       </p>
@@ -75,13 +71,11 @@
   </div>
 </div>
 <!-- /.login-box -->
-
 <!-- jQuery -->
 <script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
-
 </body>
 </html>
