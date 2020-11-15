@@ -71,10 +71,7 @@ if (isset($_POST['btnAccion'])) {
 
         case 'Eliminar':
             if (!is_numeric($cod)) {
-                $cod = openssl_decrypt($_POST['Codigo'], COD, KEY);
-                $p = openssl_decrypt($_POST['Codigo'], COD, KEY);
-                echo "<script>alert('Elemento {$p} Borrado.... ')</script>";
-                
+                $cod = openssl_decrypt($_POST['Codigo'], COD, KEY);                
                 foreach ($_SESSION['CARRITO'] as $indice=>$producto) {
                     if ($producto['PKCodigo']==$p) {                        
                         unset($_SESSION['CARRITO'][$indice]);
