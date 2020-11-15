@@ -32,7 +32,7 @@
         <!--Item Tienda -->
         <li class="nav-header">Tienda</li>
             <li class="nav-item">
-                <a href="tienda.php" class="nav-link">
+                <a href="../Tienda/index.php" class="nav-link">
                     <i class="nav-icon fas fa-calendar-alt"></i>
                     <p>Tienda<span class="badge badge-danger right">9+</span></p>
                 </a>
