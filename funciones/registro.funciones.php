@@ -1,6 +1,7 @@
 <?php
 include("../config/conexion.php");
 
+$TipoId = $_POST['CbxTipoId'] ?? null;
 $id = $_POST['TxtId'] ?? null;
 $nombres = $_POST['TxtNombres'] ?? null;
 $apellidos = $_POST['TxtApellidos'] ?? null;
@@ -13,10 +14,11 @@ if (isset($_POST['BtnRegistro'])) {
     if ($_POST['TxtId']!=null ||$_POST['TxtNombres']!=null ||$_POST['TxtApellidos']!=null ||$_POST['CbxSexo']!=0||
         $_POST['TxtTelefono']!=null||$_POST['TxtCorreo']!=null||$_POST['TxtDireccion']!=null) {
 
-        $strSQL = "INSERT INTO tblpersonas (PKId,Nombres,Apellidos,FKCodigo_TblSexo,Correo,Telefono,Direccion) 
-                    VALUES (:ID, :Nombres, :Apellidos, :Sexo, :Telefono,:Correo,:Direccion);";
+        $strSQL = "INSERT INTO tblpersonas (TipoId,PKIdentificacion,Nombres,Apellidos,FKCodigo_TblSexo,Correo,Telefono,Direccion) 
+                    VALUES (:TId ,:ID, :Nombres, :Apellidos, :Sexo, :Telefono,:Correo,:Direccion);";
 
         $aryParametros = [
+            ':TId' => $TipoId,
             ':ID' => $id,
             ':Nombres' => strtoupper($nombres),
             ':Apellidos' => strtoupper($apellidos),    
@@ -26,11 +28,11 @@ if (isset($_POST['BtnRegistro'])) {
             ':Direccion' => strtoupper($direccion)
         ]; // Arreglo asociativo => :propiedad
 
-        $objSentencia = $bds->prepare($strSQL);
+        $objSentencia = $pdo->prepare($strSQL);
         # $objSentencia->execute(); // Ejecutar sin parametros
         $objSentencia->execute($aryParametros);
         echo "<script>alert('Registrado Correctamente ✔')</script>";
         echo"<script>alertify.success('Guardado Correctamente');</script>";
-
+        header("LOCATION : ../pages/login.php");
     }
 }
