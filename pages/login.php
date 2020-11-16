@@ -21,16 +21,15 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="index.php"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="index.php" method="post">
+      <form action=" ../funciones/Validarlog.php" method="POST">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email"required>
+          <input type="email" name ="TxtUsuario" class="form-control" placeholder="Email"required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -38,7 +37,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" required>
+          <input type="password" name ="TxtPassword"  class="form-control" placeholder="Password" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -47,7 +46,7 @@
         </div>
         <div class="row ">
           <div class="col-6 center">
-            <button type="submit" class="btn btn-primary btn-block">Iniciar Session</button>
+            <button type="submit"  value= "Iniciar sesion" class="btn btn-primary btn-block">Iniciar Session</button>
           </div>
           <!-- /.col -->
         </div>
